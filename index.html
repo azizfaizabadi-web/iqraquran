@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqra Quran Academy | Premium Online Learning</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Pattern Background -->
+    <div class="islamic-pattern-bg"></div>
+
+    <!-- Animated Glowing Orbs Background -->
+    <div class="bg-orbs">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar hidden">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Iqra Quran Academy Logo" class="brand-icon">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#courses">Courses <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quran_memorization.html">Quran Memorization</a></li>
+                        <li><a href="course_detail.html">Quran Recitation</a></li>
+                        <li><a href="course_detail.html">Tajweed Quran</a></li>
+                        <li><a href="course_detail.html">Reading Quran Basics</a></li>
+                        <li><a href="course_detail.html">Islamic Studies</a></li>
+                        <li><a href="course_detail.html">Learn Arabic</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tools">Quran Tools</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#login" class="btn btn-outline">Log In</a>
+                <a href="#signup" class="btn btn-primary">Start Journey</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li class="nav-item-dropdown">
+                <a href="#courses">Courses <i class="fa-solid fa-chevron-down"
+                        style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="quran_memorization.html">Quran Memorization</a></li>
+                    <li><a href="course_detail.html">Quran Recitation</a></li>
+                    <li><a href="course_detail.html">Tajweed Quran</a></li>
+                    <li><a href="course_detail.html">Reading Quran Basics</a></li>
+                    <li><a href="course_detail.html">Islamic Studies</a></li>
+                    <li><a href="course_detail.html">Learn Arabic</a></li>
+                </ul>
+            </li>
+            <li><a href="#tools">Quran Tools</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#login" class="btn btn-outline">Log In</a></li>
+            <li><a href="#signup" class="btn btn-primary">Start Journey</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content hidden">
+            <h1 class="hero-title">Master the Quran with <br><span class="highlight">Expert Scholars</span></h1>
+            <p class="hero-subtitle">Experience a world-class, immersive learning environment combining traditional
+                knowledge with modern technology.</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary btn-large">Explore Courses</a>
+                <a href="#book-demo" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book a Demo
+                    Class</a>
+            </div>
+        </div>
+        <div class="hero-visual hidden">
+            <!-- Decorative Visual Element -->
+            <div class="lantern-container">
+                <img src="quran_hero.png" alt="Holy Quran" class="hero-quran-img">
+
+                <!-- Tasbeeh / Beads overlay using beautiful SVG -->
+                <svg viewBox="0 0 200 310" class="tasbeeh-svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="beadGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#ffe169" />
+                            <stop offset="40%" stop-color="#e8a800" />
+                            <stop offset="100%" stop-color="#916a00" />
+                        </linearGradient>
+                        <linearGradient id="tasselGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#f5d667" />
+                            <stop offset="100%" stop-color="#8a6d20" />
+                        </linearGradient>
+                    </defs>
+                    <filter id="bead-shadow">
+                        <feDropShadow dx="2" dy="5" stdDeviation="3" flood-color="#000" flood-opacity="0.6" />
+                    </filter>
+                    <g filter="url(#bead-shadow)">
+                        <!-- Main loop thread - with a big natural curve in the middle -->
+                        <path
+                            d="M 60 50 C 100 0, 180 30, 150 90 C 130 130, 80 120, 110 160 C 130 180, 115 175, 100 175 C 80 175, 50 160, 60 110 C 70 60, 20 100, 60 50 Z"
+                            fill="none" stroke="#5a420b" stroke-width="2" />
+                        <!-- Main circular beads draped -->
+                        <path
+                            d="M 60 50 C 100 0, 180 30, 150 90 C 130 130, 80 120, 110 160 C 130 180, 115 175, 100 175 C 80 175, 50 160, 60 110 C 70 60, 20 100, 60 50 Z"
+                            fill="none" stroke="url(#beadGrad)" stroke-width="15" stroke-linecap="round"
+                            stroke-dasharray="0.1 14.5" />
+                        <!-- Thread to the imam -->
+                        <path d="M 100 175 L 100 215" fill="none" stroke="#5a420b" stroke-width="2" />
+                        <!-- The Imam (elongated bead piece) -->
+                        <path
+                            d="M 94 175 C 94 160, 106 160, 106 175 C 106 195, 102 205, 100 210 C 98 205, 94 195, 94 175 Z"
+                            fill="url(#beadGrad)" />
+                        <!-- Rings on imam -->
+                        <ellipse cx="100" cy="180" rx="7" ry="2.5" fill="#fff" opacity="0.8" />
+                        <ellipse cx="100" cy="192" rx="5" ry="2" fill="#fff" opacity="0.8" />
+                        <!-- Couple of tiny beads below imam -->
+                        <circle cx="100" cy="225" r="4.5" fill="url(#beadGrad)" />
+                        <!-- Tassel threads (shortened) -->
+                        <path
+                            d="M 100 240 L 78 280 M 100 240 L 88 285 M 100 240 L 95 290 M 100 240 L 100 290 M 100 240 L 105 290 M 100 240 L 112 285 M 100 240 L 122 280"
+                            stroke="url(#tasselGrad)" stroke-width="2.5" stroke-linecap="round" />
+                        <!-- Tassel cap -->
+                        <path d="M 93 235 C 93 227, 107 227, 107 235 L 105 245 L 95 245 Z" fill="url(#tasselGrad)" />
+                        <rect x="94" y="245" width="12" height="3" fill="#4d370c" />
+                    </g>
+                </svg>
+                <div class="glow"></div>
+            </div>
+        </div>
+        <a href="#courses" class="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+
+
+    <!-- Service Grid / Offers Section -->
+    <section id="services" class="services section-padding" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="section-header hidden">
+                <h2>Our Services</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="service-grid">
+                <!-- Offer Box 1 -->
+                <div class="service-box hidden">
+                    <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Certified Tutors</h3>
+                    <p>Learn from globally recognized scholars with certified Ijazahs. Master the Quran with experts.
+                    </p>
+                    <a href="https://schoolalquran.com/home" target="_blank" class="service-btn">Read More</a>
+                </div>
+                <!-- Offer Box 2 -->
+                <div class="service-box hidden delay-1">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-file"></i></div>
+                    <h3>Interactive LMS</h3>
+                    <p>Access extensive notes, track your daily progress, and join live 1-on-1 virtual sessions
+                        effortlessly.</p>
+                    <a href="https://schoolalquran.com/home" target="_blank" class="service-btn">Get Started</a>
+                </div>
+                <!-- Offer Box 3 -->
+                <div class="service-box hidden delay-2">
+                    <div class="service-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Modern Tools</h3>
+                    <p>Utilize integrated authentic Quran readers, tajweed guides, and custom recitation tools available
+                        24/7.</p>
+                    <a href="https://schoolalquran.com/home" target="_blank" class="service-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section (LMS Integration Mockup) -->
+    <section id="courses" class="courses section-padding dark-bg">
+        <div class="container">
+            <div class="section-header text-center hidden">
+                <h2>Featured Courses</h2>
+                <p>Curated learning paths for every age and level.</p>
+                <div class="divider center"></div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Course Card 1: Quran Memorization -->
+                <div class="course-card hidden">
+                    <div class="course-header"
+                        style="justify-content: center; gap: 0.5rem; text-align: center; flex-direction: column;">
+                        <i class="fa-solid fa-brain"
+                            style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 1.5rem;">Quran Memorization</h3>
+                    </div>
+                    <div class="course-content" style="text-align: center;">
+                        <p>Learn memorizing the Quran, become Hafiz/Hafiza of holy Quran, and recite it by heart.</p>
+                        <a href="quran_memorization.html" class="btn btn-primary w-full mt-2">Course Details</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 2: Quran Recitation -->
+                <div class="course-card hidden delay-1">
+                    <div class="course-header"
+                        style="justify-content: center; gap: 0.5rem; text-align: center; flex-direction: column;">
+                        <i class="fa-solid fa-microphone-lines"
+                            style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 1.5rem;">Quran Recitation</h3>
+                    </div>
+                    <div class="course-content" style="text-align: center;">
+                        <p>You will learn to recite Quran correctly in the way reported by the Prophet Muhammad (PBUH).
+                        </p>
+                        <a href="course_detail.html" class="btn btn-primary w-full mt-2">Course Details</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 3: Tajweed Quran -->
+                <div class="course-card hidden delay-2">
+                    <div class="course-header"
+                        style="justify-content: center; gap: 0.5rem; text-align: center; flex-direction: column;">
+                        <i class="fa-solid fa-book-open-reader"
+                            style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 1.5rem;">Tajweed Quran</h3>
+                    </div>
+                    <div class="course-content" style="text-align: center;">
+                        <p>Learn Tajweed rules of the holy Quran to improve your Quran recitation without any errors.
+                        </p>
+                        <a href="course_detail.html" class="btn btn-primary w-full mt-2">Course Details</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 4: Reading Quran Basics -->
+                <div class="course-card hidden mt-4">
+                    <div class="course-header"
+                        style="justify-content: center; gap: 0.5rem; text-align: center; flex-direction: column;">
+                        <i class="fa-solid fa-book-quran"
+                            style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 1.5rem;">Reading Quran Basics</h3>
+                    </div>
+                    <div class="course-content" style="text-align: center;">
+                        <p>Learn the Basics of the Quran Reading online with the best Quran Scholars on the internet.
+                        </p>
+                        <a href="course_detail.html" class="btn btn-primary w-full mt-2">Course Details</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 5: Islamic Studies -->
+                <div class="course-card hidden delay-1 mt-4">
+                    <div class="course-header"
+                        style="justify-content: center; gap: 0.5rem; text-align: center; flex-direction: column;">
+                        <i class="fa-solid fa-mosque"
+                            style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 1.5rem;">Islamic Studies</h3>
+                    </div>
+                    <div class="course-content" style="text-align: center;">
+                        <p>Learn about Islam, obligations, sunnah, Dua’a (supplication), and more by top Quran scholars.
+                        </p>
+                        <a href="course_detail.html" class="btn btn-primary w-full mt-2">Course Details</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 6: Learn Arabic -->
+                <div class="course-card hidden delay-2 mt-4">
+                    <div class="course-header"
+                        style="justify-content: center; gap: 0.5rem; text-align: center; flex-direction: column;">
+                        <i class="fa-solid fa-language"
+                            style="font-size: 2.5rem; color: var(--clr-gold); margin-bottom: 0.5rem;"></i>
+                        <h3 style="font-size: 1.5rem;">Learn Arabic</h3>
+                    </div>
+                    <div class="course-content" style="text-align: center;">
+                        <p>Learn the Arabic language online with the best native Arab tutors specialized Arabic studies.
+                        </p>
+                        <a href="course_detail.html" class="btn btn-primary w-full mt-2">Course Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certified Tutors Section -->
+    <section id="tutors" class="tutors section-padding" style="display: none;">
+        <div class="container">
+            <div class="section-header text-center hidden">
+                <h2>Our Certified Tutors</h2>
+                <p>Learn from authentic scholars with Ijazahs.</p>
+                <div class="divider center"></div>
+            </div>
+            <div class="tutors-grid">
+                <!-- Male Tutors -->
+                <div class="tutor-card hidden modal-trigger" data-tutor="m1">
+                    <img src="tutor_male.png" alt="Male Tutor 1" class="tutor-img">
+                    <h3>Sheikh Ahmad</h3>
+                    <p>Tajweed Expert</p>
+                </div>
+                <div class="tutor-card hidden delay-1 modal-trigger" data-tutor="m2">
+                    <img src="tutor_male.png" alt="Male Tutor 2" class="tutor-img">
+                    <h3>Sheikh Tariq</h3>
+                    <p>Hifz Instructor</p>
+                </div>
+                <div class="tutor-card hidden delay-2 modal-trigger" data-tutor="m3">
+                    <img src="tutor_male.png" alt="Male Tutor 3" class="tutor-img">
+                    <h3>Sheikh Omar</h3>
+                    <p>Islamic Studies</p>
+                </div>
+                <!-- Female Tutors -->
+                <div class="tutor-card hidden modal-trigger" data-tutor="f1">
+                    <img src="tutor_female.png" alt="Female Tutor 1" class="tutor-img">
+                    <h3>Ustadha Aisha</h3>
+                    <p>Quranic Arabic</p>
+                </div>
+                <div class="tutor-card hidden delay-1 modal-trigger" data-tutor="f2">
+                    <img src="tutor_female.png" alt="Female Tutor 2" class="tutor-img">
+                    <h3>Ustadha Fatima</h3>
+                    <p>Tafseer and Tajweed</p>
+                </div>
+                <div class="tutor-card hidden delay-2 modal-trigger" data-tutor="f3">
+                    <img src="tutor_female.png" alt="Female Tutor 3" class="tutor-img">
+                    <h3>Ustadha Zainab</h3>
+                    <p>Children's Islamic Ed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutor Profile Modal -->
+    <div id="tutor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="Tutor" id="modal-img" class="modal-tutor-img">
+                <div class="modal-info">
+                    <h3 id="modal-name">Tutor Name</h3>
+                    <h4 id="modal-title" class="text-gold">Title</h4>
+                    <p id="modal-desc">Description goes here.</p>
+                    <div class="experience-badge"><i class="fa-solid fa-award"></i> <span id="modal-exp">10+ Years
+                            Experience</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Quran Tools Mockup -->
+    <section id="tools" class="quran-tools section-padding">
+        <div class="container">
+            <div class="tools-layout">
+                <div class="tools-text hidden">
+                    <h2>Immersive Quran Reader</h2>
+                    <div class="divider"></div>
+                    <p>Experience our built-in interactive reader featuring beautiful Uthmani script, word-by-word
+                        translations, and synchronized audio playback from world-renowned reciters.</p>
+                    <ul class="tools-list">
+                        <li><i class="fa-solid fa-check text-gold"></i> Multiple distinct Arabic fonts</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Highlighted Tajweed rules</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Memorization loop controls</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline mt-2">Try the Reader</a>
+                </div>
+                <div class="tools-showcase hidden delay-1">
+                    <div class="reader-mockup" id="quran-reader-app">
+                        <div class="reader-header-dynamic">
+                            <div class="reader-controls custom-dropdowns-container">
+                                <!-- Custom Surah Select -->
+                                <div class="custom-select" id="surah-custom">
+                                    <div class="select-selected"><span>Al Quran</span><i
+                                            class="fa-solid fa-chevron-down"></i></div>
+                                    <div class="select-items select-hide" id="surah-list">
+                                        <!-- Surahs populated by JS -->
+                                    </div>
+                                    <input type="hidden" id="surah-select">
+                                </div>
+
+
+                                <!-- Custom Reciter Select -->
+                                <div class="custom-select" id="reciter-custom">
+                                    <div class="select-selected"><span>Qaris/Reciters</span><i
+                                            class="fa-solid fa-chevron-down"></i></div>
+                                    <div class="select-items select-hide">
+                                        <div class="optgroup-label">Names</div>
+                                        <div class="select-item" data-value="none">None (Text Only)</div>
+                                        <div class="select-item" data-value="ar.alafasy">Mishary Rashid Alafasy</div>
+                                        <div class="select-item" data-value="ar.abdulbasitmurattal">Abdul Basit</div>
+                                        <div class="select-item" data-value="ar.abdurrahmaansudais">Abdurrahmaan
+                                            As-Sudais</div>
+                                        <div class="select-item" data-value="ar.mahermuaiqly">Maher Al Muaiqly</div>
+                                        <div class="select-item" data-value="ar.minshawi">Mohamed Siddiq al-Minshawi
+                                        </div>
+                                        <div class="select-item" data-value="ar.husary">Mahmoud Khalil Al-Husary</div>
+                                        <div class="select-item" data-value="ar.saoodshuraym">Saud Al-Shuraim</div>
+                                        <div class="select-item" data-value="ar.hudhaify">Ali Al Hudhaifi</div>
+                                        <div class="select-item" data-value="ar.abdullahbasfar">Abdullah Basfar</div>
+                                        <div class="select-item" data-value="ar.hanirifai">Hani Rifai</div>
+                                        <div class="select-item" data-value="ar.muhammadjibreel">Sheikh Muhammad Jibreel
+                                        </div>
+                                        <div class="select-item" data-value="ar.qatami">Sheikh Nasser Al-Qatami</div>
+                                        <div class="select-item" data-value="ar.hawash">Sheikh Ahmed Al-Hawash</div>
+                                    </div>
+                                    <input type="hidden" id="reciter-select">
+                                </div>
+
+                                <!-- Custom Translation Select -->
+                                <div class="custom-select" id="trans-custom">
+                                    <div class="select-selected"><span>Translations</span><i
+                                            class="fa-solid fa-chevron-down"></i></div>
+                                    <div class="select-items select-hide">
+                                        <div class="optgroup-label highlight-english">English</div>
+                                        <div class="select-item" data-value="en.sahih">Mufti Taqi Usmani</div>
+                                        <div class="optgroup-label nested-toggle highlight-urdu">Urdu <i
+                                                class="fa-solid fa-chevron-down"></i></div>
+                                        <div class="nested-items">
+                                            <div class="select-item" data-value="ur.jalandhry">Fateh Muhammad Jalandhari
+                                            </div>
+                                            <div class="select-item" data-value="ur.maududi">Abul A'ala Maududi</div>
+                                            <div class="select-item" data-value="ur.ahmedali">Ahmed Ali</div>
+                                            <div class="select-item" data-value="ur.junagarhi">Muhammad Junagarhi</div>
+                                            <div class="select-item" data-value="ur.usmani">Mufti Muhammad Taqi Usmani
+                                            </div>
+                                            <div class="select-item" data-value="ur.wahiduddin">Molana Waheed uddin Khan
+                                            </div>
+                                            <div class="select-item" data-value="ur.israr">Dr Israr Ahmad</div>
+                                            <div class="select-item" data-value="ur.farhat">Dr.Farhat Hashmi</div>
+                                        </div>
+                                        <div class="optgroup-label highlight-arabic">Arabic</div>
+                                        <div class="select-item" data-value="ar.quran-uthmani">Arabic Only</div>
+                                    </div>
+                                    <input type="hidden" id="translation-select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reader-body dynamic-reader-body" id="reader-content">
+                            <!-- Dynamic Content will be injected here -->
+                            <div class="loading-spinner text-gold">Please select a Surah to begin</div>
+                        </div>
+                        <div class="audio-player-dynamic">
+                            <audio id="quran-audio" controls
+                                style="width: 100%; outline: none; border-radius: 5px;"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview section-padding dark-bg">
+        <div class="container text-center">
+            <div class="section-header hidden">
+                <h2>Your Progress at a Glance</h2>
+                <p>A seamless dashboard experience designed to keep you motivated.</p>
+                <div class="divider center"></div>
+            </div>
+            <div class="dashboard-mockup hidden delay-1">
+                <div class="dash-sidebar">
+                    <div class="user-profile">
+                        <div class="avatar">OM</div>
+                        <span>Omar Malik</span>
+                    </div>
+                    <ul class="dash-menu">
+                        <li class="active"><i class="fa-solid fa-chart-line"></i> Overview</li>
+                        <li><i class="fa-solid fa-calendar-days"></i> Schedule</li>
+                        <li><i class="fa-solid fa-book"></i> Materials</li>
+                    </ul>
+                </div>
+                <div class="dash-main">
+                    <div class="dash-header">
+                        <h3>Upcoming Session</h3>
+                        <span class="badge in-progress">In 15 mins</span>
+                    </div>
+                    <div class="dash-card">
+                        <h4>Surah Al-Baqarah Revision</h4>
+                        <p>With Sheikh Abdullah</p>
+                        <button class="btn btn-primary mt-2 w-full"><i class="fa-solid fa-video"></i> Join Zoom
+                            Class</button>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-num">45</span>
+                            <span class="stat-label">Hours Learned</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">12</span>
+                            <span class="stat-label">Surahs Memorized</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book a Demo Section -->
+    <section id="book-demo" class="book-demo section-padding">
+        <div class="container">
+            <div class="demo-wrapper hidden">
+                <div class="demo-content">
+                    <h2>Start Your Journey Today</h2>
+                    <div class="divider"></div>
+                    <p>Experience our world-class teaching firsthand. Book a free 30-minute evaluation session with one
+                        of our certified instructors to discuss your goals and find the perfect learning path.</p>
+                    <ul class="tools-list mt-2">
+                        <li><i class="fa-solid fa-check text-gold"></i> Personalized assessment</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Meet your potential instructor</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Explore our interactive platform</li>
+                    </ul>
+                </div>
+                <div class="demo-form-container">
+                    <form class="demo-form">
+                        <h3>Book a Demo Class</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number (Optional)">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Preferred Time</option>
+                                <option value="morning">Morning (8 AM - 12 PM)</option>
+                                <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                                <option value="evening">Evening (5 PM - 9 PM)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo text-white">
+                        <img src="logo.png" alt="Iqra Quran Academy Logo" class="brand-icon">
+                        <span>Iqra Quran Academy</span>
+                    </a>
+                    <p>Empowering the Ummah with knowledge through world-class, accessible Quranic education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Teachers</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Quran Reader</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and Islamic reflections.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Iqra Quran Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

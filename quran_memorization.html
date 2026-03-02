@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#1 Quran Memorization Course | Iqra Quran Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --teal: #106b5d;
+            --gold: #ffb400;
+            --teal-darker: #0b4d42;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .bg-teal-custom {
+            background-color: var(--teal);
+        }
+
+        .bg-gold-custom {
+            background-color: var(--gold);
+        }
+
+        .text-gold-custom {
+            color: var(--gold);
+        }
+
+        /* DARK UPPER PORTION BACKGROUND */
+        .hero-background {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+                url('https://schoolalquran.com/wp-content/uploads/2020/10/inner-banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Sidebar Sidebar Styling */
+        .feature-box {
+            background-color: #000;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        /* Tab System Styling */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-link {
+            transition: all 0.3s ease;
+        }
+
+        .tab-link.active {
+            background-color: var(--gold);
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .custom-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover effects for buttons - dark black */
+        .btn-hover-dark:hover {
+            background: #111 !important;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <div class="bg-[#0b4d42] text-white text-[11px] py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex gap-6">
+                <span><i class="fa-regular fa-envelope text-gold-custom mr-2"></i>info@iqraquranacademy.com</span>
+                <span><i class="fa-solid fa-phone text-gold-custom mr-2"></i>+1 (123) 456-7890</span>
+            </div>
+            <div class="hidden md:flex gap-4 items-center uppercase font-bold">
+                <a href="#" class="hover:text-gold-custom">My Account</a>
+                <div class="h-3 w-[1px] bg-white/30"></div>
+                <div class="flex gap-3">
+                    <i class="fa-brands fa-facebook-f hover:text-gold-custom cursor-pointer"></i>
+                    <i class="fa-brands fa-twitter hover:text-gold-custom cursor-pointer"></i>
+                    <i class="fa-brands fa-youtube hover:text-gold-custom cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-teal-custom sticky top-0 z-50 py-3 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-[0.75rem] -ml-24 lg:-ml-[4rem]">
+                <img src="logo.png" class="h-[70px] w-[70px] object-cover rounded-full bg-white"
+                    alt="Iqra Quran Academy Logo">
+                <span class="font-bold text-[1.5rem] text-white" style="font-family: 'Cinzel', serif;">Iqra Quran
+                    Academy</span>
+            </a>
+            <div class="hidden lg:flex gap-8 text-white text-[13px] font-bold uppercase tracking-wider items-center">
+                <a href="index.html#home" class="hover:text-gold-custom">Home</a>
+                <div class="relative group cursor-pointer py-4">
+                    <a href="index.html#about" class="hover:text-gold-custom flex items-center gap-1">About <i
+                            class="fa-solid fa-chevron-down text-[10px]"></i></a>
+                    <div
+                        class="absolute top-full left-0 w-56 bg-white shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50 overflow-hidden border-t-2 border-gold-custom">
+                        <a href="#"
+                            class="px-4 py-2.5 text-gray-700 hover:bg-[#d4edda] hover:text-[#ffb400] capitalize text-[13px] normal-case font-bold transition">About
+                            Academy</a>
+                        <a href="#"
+                            class="px-4 py-2.5 text-gray-700 hover:bg-[#d4edda] hover:text-[#ffb400] capitalize text-[13px] normal-case font-bold transition">Our
+                            Tutors</a>
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer py-4">
+                    <a href="index.html#courses"
+                        class="text-gold-custom border-b-2 border-gold-custom flex items-center gap-1">Courses <i
+                            class="fa-solid fa-chevron-down text-[10px]"></i></a>
+                    <div
+                        class="absolute top-full left-0 w-56 bg-white shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50 overflow-hidden border-t-2 border-gold-custom">
+                        <a href="quran_memorization.html"
+                            class="px-4 py-2.5 text-gray-700 hover:bg-[#d4edda] hover:text-[#ffb400] capitalize text-[13px] normal-case font-bold transition">Quran
+                            Memorization</a>
+                        <a href="#"
+                            class="px-4 py-2.5 text-gray-700 hover:bg-[#d4edda] hover:text-[#ffb400] capitalize text-[13px] normal-case font-bold transition">Quran
+                            Reading</a>
+                        <a href="#"
+                            class="px-4 py-2.5 text-gray-700 hover:bg-[#d4edda] hover:text-[#ffb400] capitalize text-[13px] normal-case font-bold transition">Islamic
+                            Studies</a>
+                    </div>
+                </div>
+                <a href="#" class="hover:text-gold-custom">Pricing</a>
+                <a href="#" class="hover:text-gold-custom">Blog</a>
+                <a href="#" class="hover:text-gold-custom">Contact Us</a>
+            </div>
+            <button
+                class="bg-gold-custom text-white px-8 py-3 rounded-full font-bold text-sm shadow-lg btn-hover-dark transition duration-300">GET
+                FREE TRIAL</button>
+        </div>
+    </nav>
+
+    <section class="hero-background text-white pt-12 pb-32">
+        <div class="container mx-auto px-4 text-center">
+            <nav class="text-[11px] uppercase tracking-widest text-gray-400 mb-4 font-semibold">
+                Iqra Quran Academy <span class="mx-2">></span> Courses <span class="mx-2">></span> Quran Memorization
+                Course
+            </nav>
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-12">Learn Quran Memorization</h1>
+
+            <div class="flex flex-col lg:flex-row gap-8 items-start max-w-6xl mx-auto">
+                <div
+                    class="lg:w-2/3 w-full bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-2xl border-[12px] border-[#252525]">
+                    <div class="relative bg-[#0c8c7f]">
+                        <img src="memo.jpeg" class="w-full h-auto object-cover" alt="Online Quran Memorization Screen">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/40 transition cursor-pointer group">
+                            <div
+                                class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition">
+                                <i class="fa-solid fa-play text-4xl text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/3 w-full feature-box p-8 text-left shadow-2xl">
+                    <h3 class="text-xl font-bold mb-6 border-b border-gray-800 pb-3 uppercase tracking-tighter">Course
+                        Features</h3>
+                    <ul class="space-y-5 text-base md:text-lg text-white font-medium">
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-gift text-white text-2xl drop-shadow-md"></i>
+                            Free Trial Class</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-file-contract text-white text-2xl drop-shadow-md"></i> Completion
+                            Certificates</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-book-open text-white text-2xl drop-shadow-md"></i> Various Learning
+                            Materials
+                        </li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-clock text-white text-2xl drop-shadow-md"></i>
+                            Classes Around The Clock</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-headset text-white text-2xl drop-shadow-md"></i>
+                            One-To-One Live Sessions
+                        </li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-user-check text-white text-2xl drop-shadow-md"></i> Male & Female
+                            Tutors</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-shield-heart text-white text-2xl drop-shadow-md"></i> 100% Money Back
+                            Guarantee</li>
+                    </ul>
+                    <div class="mt-10 space-y-4">
+                        <button
+                            class="w-full bg-gold-custom text-white py-4 rounded-full font-black text-sm md:text-base uppercase shadow-lg btn-hover-dark transition duration-300">Book
+                            Free Trial</button>
+                        <button
+                            class="w-full bg-[#0d8474] text-white py-4 rounded-full font-black text-sm md:text-base uppercase btn-hover-dark transition shadow-lg duration-300">Pricing
+                            Plans</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-16 -mt-16 relative z-20">
+        <div class="flex flex-col lg:flex-row gap-12">
+
+            <div class="lg:w-2/3 bg-white p-8 custom-shadow rounded-xl">
+                <div class="flex flex-wrap gap-2 mb-10 border-b border-gray-100 pb-6">
+                    <button
+                        class="tab-link active px-6 py-2.5 text-sm md:text-base font-black uppercase flex items-center gap-2 hover:text-gold-custom transition bg-transparent"
+                        onclick="openTab(event, 'about')"><span
+                            class="w-3 h-3 bg-teal-custom rounded-full inline-block"></span> About</button>
+                    <button
+                        class="tab-link px-6 py-2.5 text-sm md:text-base font-black uppercase text-gray-400 hover:bg-[#ffb400] hover:text-white rounded-[30px] transition flex items-center gap-2"
+                        onclick="openTab(event, 'syllabus')"><span
+                            class="w-3 h-3 bg-teal-custom rounded-full inline-block"></span> Syllabus</button>
+                    <button
+                        class="tab-link px-6 py-2.5 text-sm md:text-base font-black uppercase text-gray-400 hover:bg-[#ffb400] hover:text-white rounded-[30px] transition flex items-center gap-2"
+                        onclick="openTab(event, 'schedule')"><span
+                            class="w-3 h-3 bg-teal-custom rounded-full inline-block"></span> Schedule</button>
+                    <button
+                        class="tab-link px-6 py-2.5 text-sm md:text-base font-black uppercase text-gray-400 hover:bg-[#ffb400] hover:text-white rounded-[30px] transition flex items-center gap-2"
+                        onclick="openTab(event, 'faq')"><span
+                            class="w-3 h-3 bg-teal-custom rounded-full inline-block"></span> FAQs</button>
+                </div>
+
+                <div id="about" class="tab-content active">
+                    <h2
+                        class="text-2xl font-bold text-teal-custom mb-6 uppercase tracking-tight border-l-4 border-gold-custom pl-4">
+                        About Online Quran Memorization Course</h2>
+                    <div class="text-[15px] text-gray-600 space-y-5 leading-relaxed">
+                        <p>Memorizing the Holy Quran is a noble spiritual journey that connects the believer directly
+                            with the words of Allah structure and substance. At <strong>Iqra Quran
+                                Academy</strong>, we utilize a structured, easy-to-follow methodology that has helped
+                            thousands of students worldwide achieve their dream of becoming a Hafiz-e-Quran. Our deeply
+                            specialized courses are designed not only to assist you in memorizing verses but also to
+                            understand the profound meanings behind them. From the moment you enroll, our certified
+                            instructors focus on establishing a strong foundation in pronunciation, Tajweed, and
+                            retention techniques tailored uniquely to your learning pace and available time.</p>
+                        <h2
+                            class="text-2xl font-bold text-teal-custom mb-6 uppercase tracking-tight border-l-4 border-gold-custom pl-4 mt-12">
+                            Why Learn Quran Memorization?</h2>
+                        <p>Learning Hifz Quran is a transformational process that requires patience, dedication, and a
+                            consistent routine. It is a commitment that shapes your character, enhances cognitive
+                            abilities, and brings endless spiritual rewards. Our classes are intricately designed to be
+                            100% online and interactive, taking place in a highly personalized one-on-one setting. This
+                            ensures that the teacher focuses entirely on your individual progress. By concentrating
+                            heavily on perfect pronunciation (Tajweed), exact intonation, and long-term memory retention
+                            strategies, we ensure that what you memorize stays with you for a lifetime. Whether you are
+                            aiming to memorize a few chapters or the entire Quran, our curriculum adapts to your
+                            specific goals and schedule.</p>
+                        <ul class="list-none space-y-4 mt-6">
+                            <li class="flex items-start gap-4"><i
+                                    class="fa-solid fa-circle-check text-teal-custom mt-1 text-lg"></i>
+                                <div><strong>Personalized Lesson Plans:</strong> Custom milestones and daily targets are
+                                    created for both kids and adults, ensuring steady, stress-free progress.</div>
+                            </li>
+                            <li class="flex items-start gap-4"><i
+                                    class="fa-solid fa-circle-check text-teal-custom mt-1 text-lg"></i>
+                                <div><strong>Flexible Timing:</strong> Book classes 24/7 matching your timezone and busy
+                                    lifestyle, guaranteeing you never miss a lesson.</div>
+                            </li>
+                            <li class="flex items-start gap-4"><i
+                                    class="fa-solid fa-circle-check text-teal-custom mt-1 text-lg"></i>
+                                <div><strong>Expert Assessment:</strong> Regular evaluations and revision schedules to
+                                    solidify older memorized portions while learning new ones.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-16 border-t pt-10">
+                        <h2 class="text-2xl font-bold text-teal-custom mb-8 uppercase">Benefits Of Learning Hifz Quran
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div
+                                class="bg-gray-50 border border-gray-100 shadow-sm p-8 rounded-xl hover:shadow-md transition">
+                                <h4 class="text-lg font-bold text-teal-custom mb-3 flex items-center gap-3"><i
+                                        class="fa-solid fa-star text-gold-custom"></i> Win this life and the hereafter
+                                </h4>
+                                <p class="text-[15px] text-gray-600 leading-relaxed">Memorizing the Quran is a gateway
+                                    to immense spiritual, intellectual, and worldly success. In this life, it brings
+                                    unparalleled inner peace, sharpens the mind, and commands respect within the
+                                    community. In the hereafter, the Hafiz is elevated through the ranks of Paradise
+                                    (Jannah) with every verse they recite. It is a profound, lifelong achievement that
+                                    bridges both worlds and secures divine blessings at every step.</p>
+                            </div>
+                            <div
+                                class="bg-gray-50 border border-gray-100 shadow-sm p-8 rounded-xl hover:shadow-md transition">
+                                <h4 class="text-lg font-bold text-teal-custom mb-3 flex items-center gap-3"><i
+                                        class="fa-solid fa-chalkboard-user text-gold-custom"></i> Great Assistant in
+                                    rising muslim kids</h4>
+                                <p class="text-[15px] text-gray-600 leading-relaxed">For parents, instilling the love of
+                                    the Quran in their children is the greatest gift they can provide. A child who
+                                    memorizes the Holy Quran develops a strong moral compass rooted in Islamic values.
+                                    This journey cultivates discipline, focus, and a profound respect for elders and
+                                    society. Raising kids with the Quran at their core ensures they grow into upright,
+                                    resilient Muslims equipped to navigate modern challenges with faith and conviction.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-gray-50 border border-gray-100 shadow-sm p-8 rounded-xl hover:shadow-md transition">
+                                <h4 class="text-lg font-bold text-teal-custom mb-3 flex items-center gap-3"><i
+                                        class="fa-solid fa-clock-rotate-left text-gold-custom"></i> Quran Memorization
+                                    Fulfills Islamic Obligation</h4>
+                                <p class="text-[15px] text-gray-600 leading-relaxed">Preserving the exact words of Allah
+                                    is a communal obligation (Fard Kifayah) upon the Muslim Ummah. By participating in
+                                    Hifz, the student is actively fulfilling this grand duty, ensuring that the Quran
+                                    remains uncorrupted and alive in the hearts of the believers generation after
+                                    generation. It is the ultimate manifestation of dedicating oneself to preserving the
+                                    pristine message of Islam.</p>
+                            </div>
+                            <div
+                                class="bg-gray-50 border border-gray-100 shadow-sm p-8 rounded-xl hover:shadow-md transition">
+                                <h4 class="text-lg font-bold text-teal-custom mb-3 flex items-center gap-3"><i
+                                        class="fa-solid fa-certificate text-gold-custom"></i> A Relief for Heart, Mind
+                                    and Soul</h4>
+                                <p class="text-[15px] text-gray-600 leading-relaxed">The modern world is filled with
+                                    anxiety, distractions, and stress. Memorizing the Quran provides a divine sanctuary
+                                    from this turbulence. The rhythmic recitation and reflection on its profound
+                                    meanings bring a unique, unparalleled tranquility. It serves as an anchor for the
+                                    soul, healing emotional wounds, clearing mental fog, and providing a constant
+                                    reassuring connection with the Creator throughout life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="syllabus" class="tab-content text-gray-600">Syllabus content goes here...</div>
+                <div id="schedule" class="tab-content text-gray-600">Schedule content goes here...</div>
+                <div id="faq" class="tab-content text-gray-600">FAQ content goes here...</div>
+            </div>
+
+            <div class="lg:w-1/3 w-full mt-10 lg:mt-20">
+                <div
+                    class="bg-black p-8 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-gray-800 text-left">
+                    <h3
+                        class="text-xl font-bold mb-6 border-b border-gray-800 pb-3 uppercase tracking-tighter text-white">
+                        Course
+                        Features</h3>
+                    <ul class="space-y-5 text-base md:text-lg text-white font-medium">
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-gift text-white text-2xl drop-shadow-md"></i>
+                            Free Trial Class</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-file-contract text-white text-2xl drop-shadow-md"></i> Completion
+                            Certificates</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-book-open text-white text-2xl drop-shadow-md"></i> Various Learning
+                            Materials
+                        </li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-clock text-white text-2xl drop-shadow-md"></i>
+                            Classes Around The Clock</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-headset text-white text-2xl drop-shadow-md"></i>
+                            One-To-One Live Sessions
+                        </li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-user-check text-white text-2xl drop-shadow-md"></i> Male & Female
+                            Tutors</li>
+                        <li class="flex items-center gap-4"><i
+                                class="fa-solid fa-shield-heart text-white text-2xl drop-shadow-md"></i> 100% Money Back
+                            Guarantee</li>
+                    </ul>
+                    <div class="mt-10 space-y-4">
+                        <button
+                            class="w-full bg-gold-custom text-white py-4 rounded-full font-black text-sm md:text-base uppercase shadow-lg btn-hover-dark transition duration-300">Book
+                            Free Trial</button>
+                        <button
+                            class="w-full bg-[#0d8474] text-white py-4 rounded-full font-black text-sm md:text-base uppercase btn-hover-dark transition shadow-lg duration-300">Pricing
+                            Plans</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-teal-custom text-white pt-20 pb-10">
+        <div
+            class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-16">
+            <div class="space-y-6">
+                <a href="index.html" class="flex items-center gap-3 mb-4">
+                    <img src="logo.png" class="h-12" alt="Footer Logo" style="filter: brightness(0) invert(1);">
+                    <span class="font-bold text-xl text-white uppercase" style="font-family: 'Cinzel', serif;">Iqra
+                        Quran Academy</span>
+                </a>
+                <p class="text-sm text-gray-300 leading-relaxed">We are the leading global Online Quran Academy, helping
+                    Muslims connect with the words of Allah from the comfort of their homes.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:bg-gold-custom transition"><i
+                            class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#"
+                        class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:bg-gold-custom transition"><i
+                            class="fa-brands fa-twitter text-sm"></i></a>
+                    <a href="#"
+                        class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:bg-gold-custom transition"><i
+                            class="fa-brands fa-youtube text-sm"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-8 text-gold-custom uppercase tracking-wider">Featured Courses</h4>
+                <ul class="text-[13px] space-y-4 text-gray-300">
+                    <li><a href="#" class="hover:text-gold-custom">Quran Reading Course</a></li>
+                    <li><a href="#" class="hover:text-gold-custom">Tajweed Rules Course</a></li>
+                    <li><a href="#" class="hover:text-gold-custom">Quran Memorization</a></li>
+                    <li><a href="#" class="hover:text-gold-custom">Islamic Studies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-8 text-gold-custom uppercase tracking-wider">Useful Links</h4>
+                <ul class="text-[13px] space-y-4 text-gray-300">
+                    <li><a href="#" class="hover:text-gold-custom">FAQs</a></li>
+                    <li><a href="#" class="hover:text-gold-custom">About Us</a></li>
+                    <li><a href="#" class="hover:text-gold-custom">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-gold-custom">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-8 text-gold-custom uppercase tracking-wider">Get In Touch</h4>
+                <ul class="text-[13px] space-y-5 text-gray-300">
+                    <li class="flex gap-4"><i class="fa-solid fa-phone text-gold-custom"></i> +1 123 456 7890</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-envelope text-gold-custom"></i>
+                        info@iqraquranacademy.com</li>
+                    <li class="flex gap-4"><i class="fa-solid fa-location-dot text-gold-custom"></i> 123 Learning Way,
+                        Education Hub</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center pt-8 text-[11px] text-gray-400 font-semibold tracking-wide">
+            &copy; 2026 IQRA QURAN ACADEMY - ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
